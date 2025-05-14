@@ -1,11 +1,8 @@
-"use client";
-
 import type React from "react";
 
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import User from "../assets/Images/User.png";
 import { toggleTheme } from "../redux/slices/themeSlice";
 import {
   FaHome,
@@ -248,7 +245,7 @@ const Navbar = () => {
               >
                 <div className="w-10 rounded-full">
                   <img
-                    src={User || "/placeholder.svg"}
+                    src={"/images/User.png"}
                     alt="User"
                     className="shadow-sm cursor-pointer"
                   />
